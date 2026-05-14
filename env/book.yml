@@ -1,0 +1,31 @@
+name: book
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  # core
+  - pandas
+  - numpy
+  - scipy
+
+  # visualization
+  - matplotlib
+  - seaborn
+
+  # machine learning / clustering
+  - scikit-learn
+
+  # statistics
+  - statsmodels
+
+  # notebooks
+  - jupyter
+  - notebook
+  - ipykernel
+
+  # utilities
+  - tqdm
