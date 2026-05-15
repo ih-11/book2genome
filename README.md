@@ -110,3 +110,5 @@ notebooks/01_kmer_exploration.ipynb
 Although this project uses books and language, the same computational ideas are commonly used in genomics and transcriptomics.
 
 The project is intended as a simple and intuitive way to introduce concepts such as sequence composition, motif discovery, clustering, and exploratory sequence analysis.
+
+# to be continued
