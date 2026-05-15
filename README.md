@@ -18,7 +18,7 @@ The goal of this project is educational: to explain ideas from bioinformatics an
 |---|---|
 | letters | nucleotides |
 | books | genomes / transcripts |
-| character k-mers | sequence motifs |
+| character frequency (k-mers) | sequence motifs |
 | language patterns | biological sequence signatures |
 | clustering by language | clustering by species or samples |
 
