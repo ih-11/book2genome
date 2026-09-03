@@ -26,3 +26,7 @@ Thumbs.db
 # Uncomment if you don't want processed output checked into git:
 # processed/
 # results/
+
+# Generated, regenerate via scripts/count_kmers.py
+results/kmers/k5_book_counts.tsv
+results/kmers/k6_book_counts.tsv
