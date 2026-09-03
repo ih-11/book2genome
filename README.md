@@ -24,9 +24,23 @@ The goal of this project is educational: to explain ideas from bioinformatics an
 
 ---
 
-## Dataset
+## Data
 
-The current dataset contains 22 books from 7 languages.
+This project doesn't ship with book data. Add your own under `data/book/<language>/*.txt`.
+
+Any public-domain, plain-text book in an alphabetic script works — swap in whatever
+languages or titles you like. Good sources include Project Gutenberg
+(gutenberg.org) for many European languages, or your national digital library
+for languages Gutenberg doesn't cover well.
+
+Requirements:
+- Plain `.txt`, UTF-8 encoded
+- One folder per language, using the language name in lowercase (e.g. `english/`, `french/`)
+- `scripts/preprocess.py` handles removing Project Gutenberg boilerplate and
+  reducing text to uppercase letters only — no other cleanup needed beforehand
+
+The example dataset used in `notebooks/01_kmer_exploration.ipynb` contains 22 books
+across 7 languages:
 
 | Language | Number of books | Books |
 |---|---:|---|
@@ -37,6 +51,10 @@ The current dataset contains 22 books from 7 languages.
 | Polish | 3 | `lalka`, `pan_tadeusz`, `quo_vadis` |
 | Swedish | 3 | `gusta_berling`, `niels_holgersson`, `roda_rummet` |
 | Turkish | 3 | `araba_sevdasi`, `mai_ve_siyah`, `serguzest` |
+
+The notebook itself works with a balanced 3-book, 3-language subset (English,
+French, German) as a worked example — adjust the `languages` and `keep_books`
+variables at the top of the notebook to explore a different subset.
 
 Books are preprocessed into uppercase character-only sequences before analysis.
 
@@ -110,5 +128,3 @@ notebooks/01_kmer_exploration.ipynb
 Although this project uses books and language, the same computational ideas are commonly used in genomics and transcriptomics.
 
 The project is intended as a simple and intuitive way to introduce concepts such as sequence composition, motif discovery, clustering, and exploratory sequence analysis.
-
-# to be continued
