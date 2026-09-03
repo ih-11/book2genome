@@ -1,13 +1,28 @@
-# Python
-__pycache__/
-*.pyc
-
 # Jupyter
 .ipynb_checkpoints/
 
-# Generated data / outputs
-results/
-processed/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
 
-# System
+# Conda / venv
+env/*.lock
+.conda/
+venv/
+.venv/
+
+# OS cruft
 .DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Data (large / external — see README's Data section)
+# Uncomment if you don't want processed output checked into git:
+# processed/
+# results/
